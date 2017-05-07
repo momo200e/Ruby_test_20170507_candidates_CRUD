@@ -8,7 +8,7 @@ class CandidatesController < ApplicationController
  def create
       @candidate=Candidate.new(candidate_params)
    if@candidate.save
-     redirect_to candidates_path, notice: "候選人新增成功"
+     redirect_to candidates_path, notice: "候選人新增成功!!"
    else
      render :new
    end
