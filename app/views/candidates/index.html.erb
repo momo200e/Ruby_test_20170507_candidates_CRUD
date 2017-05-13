@@ -1,6 +1,8 @@
 <% provide :my_title ,"我是provide幫我設定的title" %>
 <h1>候選人列表</h1>
-
+user_gender=0：<%= user_gender(0)%><br>
+user_gender=1：<%= user_gender(1)%><br>
+user_gender=其他數字：<%= user_gender(12)%><br>
   <%= link_to "新增候選人", new_candidate_path %>
 
   <table class="table">
